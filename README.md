@@ -1,5 +1,5 @@
 # WatchDataVisualizer-appleWatch
-[ongoing, 30%]Apple Watchでセンシング可能なデータ(主に加速度)をiPhoneで受け取り可視化するアプリ。
+[ongoing, 30%]Apple Watchでセンシング可能なデータ(主にMotion Data)をiPhoneで受け取り可視化するアプリ。
 
 ## Milestones
 - [x] Start "iOS App with Watch App" project (2021/12/16)
