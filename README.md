@@ -7,6 +7,7 @@
 - [x] Core Motion on Apple Watch (2021/12/16)
 - [x] Obtain acceleration values from my Apple Watch SE and display them realtime on my iPhone XR during foreground mode of the watch (2021/12/16)
 - [ ] NOW: Under reseaching on Workout Session of HealthKit
+- [x] Sample of line chart for visualization of acceleration values (2021/12/26) 
 
 
 ## Issue1: Watchの点灯がオフになると加速度センサからのデータ取得が途絶える。(under investigation)
@@ -26,5 +27,12 @@ Apple Watchは一定時間経過するとバックグラウンドになりデー
 - ~~新しいApple Watchを買って試す。~~ (学生の財布には厳しい)
 - リアルタイムを諦めて，一旦Apple Watchにデータを保持して，後でiPhoneへ送信して可視化する。
 - Workout Sessionどうのこうのという情報がみられるが…詳しくないので調べる予定。
+
+
+## Reference
+- [Charts | GitHub](https://github.com/danielgindi/Charts)
+- [Creating a Line Chart in Swift and iOS | by Osian Smith | Medium](https://medium.com/@OsianSmith/creating-a-line-chart-in-swift-3-and-ios-10-2f647c95392e)
+- [iphoneアプリで加速度センサーの値をリアルタイムにグラフ表示する - ITエンジニアへの転身](https://non-it-engineer.com/iphone%E3%82%A2%E3%83%97%E3%83%AA%E3%81%A7%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC%E3%81%AE%E5%80%A4%E3%82%92%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%81%AB/)
+
 
 
