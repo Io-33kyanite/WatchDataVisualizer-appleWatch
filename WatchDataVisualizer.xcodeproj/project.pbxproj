@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1459D622778A6440018266F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = D1459D612778A6440018266F /* Charts */; };
+		D1459D642778A9A20018266F /* AccelEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1459D632778A9A20018266F /* AccelEntries.swift */; };
 		D1F40F85276AF23700D0AAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40F84276AF23700D0AAE3 /* AppDelegate.swift */; };
 		D1F40F87276AF23700D0AAE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40F86276AF23700D0AAE3 /* SceneDelegate.swift */; };
 		D1F40F89276AF23700D0AAE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40F88276AF23700D0AAE3 /* ViewController.swift */; };
@@ -101,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D1459D632778A9A20018266F /* AccelEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelEntries.swift; sourceTree = "<group>"; };
 		D1F40F81276AF23700D0AAE3 /* WatchDataVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDataVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F40F84276AF23700D0AAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F40F86276AF23700D0AAE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1459D622778A6440018266F /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +216,7 @@
 				D1F40F84276AF23700D0AAE3 /* AppDelegate.swift */,
 				D1F40F86276AF23700D0AAE3 /* SceneDelegate.swift */,
 				D1F40F88276AF23700D0AAE3 /* ViewController.swift */,
+				D1459D632778A9A20018266F /* AccelEntries.swift */,
 				D1F40F8A276AF23700D0AAE3 /* Main.storyboard */,
 				D1F40F8D276AF23D00D0AAE3 /* Assets.xcassets */,
 				D1F40F8F276AF23D00D0AAE3 /* LaunchScreen.storyboard */,
@@ -295,6 +300,9 @@
 				D1F40FAE276AF23D00D0AAE3 /* PBXTargetDependency */,
 			);
 			name = WatchDataVisualizer;
+			packageProductDependencies = (
+				D1459D612778A6440018266F /* Charts */,
+			);
 			productName = WatchDataVisualizer;
 			productReference = D1F40F81276AF23700D0AAE3 /* WatchDataVisualizer.app */;
 			productType = "com.apple.product-type.application";
@@ -451,6 +459,9 @@
 				Base,
 			);
 			mainGroup = D1F40F78276AF23700D0AAE3;
+			packageReferences = (
+				D1459D602778A6440018266F /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = D1F40F82276AF23700D0AAE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -532,6 +543,7 @@
 				D1F40F89276AF23700D0AAE3 /* ViewController.swift in Sources */,
 				D1F40F85276AF23700D0AAE3 /* AppDelegate.swift in Sources */,
 				D1F40F87276AF23700D0AAE3 /* SceneDelegate.swift in Sources */,
+				D1459D642778A9A20018266F /* AccelEntries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,6 +897,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -915,6 +928,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -1215,6 +1229,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1459D602778A6440018266F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1459D612778A6440018266F /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1459D602778A6440018266F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1F40F79276AF23700D0AAE3 /* Project object */;
 }
