@@ -9,6 +9,7 @@
 - [x] Sample of a line chart for visualization of acceleration values (2021/12/26) 
 - [x] Visualization of xyz-acceleration values my watch obtains on a line chart (2021/12/27)
 - [ ] NOW: Under reseaching on Workout Session of HealthKit to solve Issue1.
+- [ ] Making acceleration values stable such as through low-pass filter.
 
 ## Demo
 - A line chart shows us changes of acceleration values an Apple Watch SE gets. (2021/12/27)
