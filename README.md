@@ -30,7 +30,7 @@ Apple Watchは一定時間経過するとバックグラウンドになりデー
 - [Is there any provision where I can access accelerometer sensor values from apple watch to iPhone when Apple watch-app is in background? | Apple Developer Forums, asked 2 yeas ago](https://developer.apple.com/forums/thread/115300)
 
 これを解決する方法としては，
-- ~~新しいApple Watchを買って試す。~~ (学生の財布には厳しい)
+- Apple Watch Series5以降に実装されている「常にオン」なら可能？？
 - リアルタイムを諦めて，一旦Apple Watchにデータを保持して，後でiPhoneへ送信して可視化する。
 - Workout Sessionどうのこうのという情報がみられるが…詳しくないので調べる予定。
 
