@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -12,19 +12,44 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchDataVisualizer_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="status: not active" id="bqI-oV-Yhi"/>
-                        <label alignment="left" text="reachable: false" id="V8C-0i-mOs"/>
-                        <label alignment="left" text="accel (below)" id="HgR-h2-yFy"/>
-                        <label alignment="left" text="---" id="mqF-35-uNS"/>
+                        <label alignment="left" text="WC status" id="bqI-oV-Yhi">
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label alignment="left" text="WC status" id="V8C-0i-mOs">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <label alignment="left" text="ERSession status" id="CLj-LR-saW">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <separator alignment="left" id="wPm-VZ-utz"/>
+                        <label alignment="left" text="00:00" id="l52-Uh-ndv">
+                            <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <button width="1" alignment="left" title="Start Monitoring" id="FzC-pZ-cIR">
+                            <connections>
+                                <action selector="startMonitoringOnPhone" destination="AgC-eL-Hgc" id="WQ2-yX-JBA"/>
+                            </connections>
+                        </button>
+                        <label width="134" height="60" alignment="left" text="debug output here" textAlignment="left" numberOfLines="0" id="qxX-Fh-ZOL">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
                     </items>
                     <connections>
-                        <outlet property="accelLabel" destination="mqF-35-uNS" id="kfS-ZB-vQ5"/>
-                        <outlet property="activationStatusLabel" destination="bqI-oV-Yhi" id="sK7-tY-PrK"/>
+                        <outlet property="StartERSessionButton" destination="FzC-pZ-cIR" id="fQY-50-P5u"/>
+                        <outlet property="countLabel" destination="l52-Uh-ndv" id="04A-jS-0NE"/>
+                        <outlet property="debugField" destination="qxX-Fh-ZOL" id="7sg-79-neq"/>
+                        <outlet property="erSessionStatusLabel" destination="CLj-LR-saW" id="s1W-BW-fYQ"/>
                         <outlet property="reachableStatusLabel" destination="V8C-0i-mOs" id="aO1-CR-tS0"/>
+                        <outlet property="watchConnectivityStatusLabel" destination="bqI-oV-Yhi" id="sK7-tY-PrK"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="365"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
