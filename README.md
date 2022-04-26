@@ -9,7 +9,7 @@ Apple Watchでセンシング可能なデータ(まずは加速度データ)をi
 - [x] Sample of a line chart for visualization of acceleration values (2021/12/26) 
 - [x] Visualization of xyz-acceleration values my watch obtains on a line chart (2021/12/27)
 - [ ] ~~Reseaching on Workout Session of HealthKit to solve Issue1.~~
-- [x] Keep the app running even in inactive mode through extended runtime session. (2022/4/26)
+- [x] Keep the app running even in inactive mode through extended runtime sessions. (2022/4/26)
 - [ ] Making acceleration values stable such as through low-pass filter.
 - [ ] Obtain other sorts of mobile sensor data.
 
@@ -24,7 +24,7 @@ Apple Watchでセンシング可能なデータ(まずは加速度データ)をi
 
 ## Issue1: Watchの点灯がオフになると加速度センサからのデータ取得が途絶える。(solved)  
 __2022/04/26__
-Extended Runtime Session [(参考:Apple Developer Documents)](https://developer.apple.com/documentation/watchkit/using_extended_runtime_sessions) を利用することでWatchの点灯がオフ(Inactive)になってもアプリを動作させることができた。
+Extended Runtime Sessions [(参考:Apple Developer Documents)](https://developer.apple.com/documentation/watchkit/using_extended_runtime_sessions) を利用することでWatchの点灯がオフ(Inactive)になってもアプリを動作させることができた。
 
 ---
 本当は，特定の行動中(歩行中の腕の動きなど)における加速度値をリアルタイムに監視しiPhone上で可視化したいのだが，
