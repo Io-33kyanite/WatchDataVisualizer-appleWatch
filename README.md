@@ -17,7 +17,7 @@ Apple Watchでセンシング可能なデータ(まずは加速度データ)をi
 - A line chart shows us changes of acceleration values an Apple Watch SE gets. (2021/12/27)
 ![IMG_67E9DD21B0B2-1](https://user-images.githubusercontent.com/57740535/147449267-1c67a734-1082-4b9e-a8bd-85f3d7dcf3e1.png)  
 
-- Right after you touch a start monitoring button, your watch start to fetch motion data and transmit them to your iPhone in realtime.
+- Right after you touch a start monitoring button, your watch starts to fetch motion data and transmits them to your iPhone in realtime.
 
 ![IMG_5850](https://user-images.githubusercontent.com/57740535/165278931-2f3202b3-4b8f-49a1-b44c-09537e903b3e.PNG)
 
